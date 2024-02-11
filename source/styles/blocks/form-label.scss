@@ -1,0 +1,11 @@
+.form-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}

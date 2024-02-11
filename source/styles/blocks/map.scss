@@ -1,0 +1,49 @@
+.map__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.map__wrapper-location,
+.map__wrapper picture {
+  overflow: hidden;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.map__iframe {
+  display: block;
+  width: 100%;
+  height: 362px;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.map__location {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 362px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 400px;
+  }
+}

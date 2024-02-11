@@ -1,0 +1,9 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+:root {
+  --content-padding-mobile: 20px;
+  --content-padding-tablet: 30px;
+  --content-padding-desktop: 40px;
+  --content-width-mobile: (320px - var(--content-padding-mobile) * 2);
+  --content-width-tablet: (768px - var(--content-padding-tablet) * 2);
+  --content-width-desktop: (1300px - var(--content-padding-desktop) * 2);
+}

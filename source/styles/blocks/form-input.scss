@@ -1,0 +1,47 @@
+.form-input {
+  font-family: $primary-font;
+  color: $text-color-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+  min-height: 46px;
+  outline: 0;
+
+  &--contacts {
+    padding-right: 45px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    border-color: $text-color-secondary;
+    outline: 2px solid $text-color-secondary;
+  }
+
+  &:focus:invalid {
+    border-color: #ff8282;
+    outline: 2px solid #ff8282;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+
+    padding: 11px 20px;
+    min-height: 52px;
+
+    &--contacts {
+      padding-right: 45px;
+    }
+  }
+}

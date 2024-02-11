@@ -1,0 +1,167 @@
+.slider {
+  position: relative;
+  display: grid;
+  width: 280px;
+  min-height: 295px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 614px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    min-height: 650px;
+  }
+}
+
+.slider__images {
+  position: relative;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 650px;
+  }
+}
+
+.slider__images-wrapper {
+  overflow: hidden;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.slider__images-wrapper--before {
+  z-index: 10;
+  background-color: $example-color;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(180deg, $background-color-primary 150px, $example-color 150px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(180deg, $background-color-primary 190px, $background-color-secondary 190px);
+  }
+}
+
+.slider__images-wrapper--after {
+  background-color: $example-color;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(180deg, $background-color-primary 150px, $example-color 150px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(180deg, $background-color-primary 190px, $background-color-secondary 190px);
+  }
+}
+
+.slider__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 138px;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 10;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 108px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: $background-color-primary;
+    border: 2px solid #666666;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 119px;
+    left: -10px;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../images/icons/stack.svg#slider-toggle");
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+
+    &::before {
+      border: 2px solid $color-secondary;
+    }
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &:active {
+    background-color: $color-secondary;
+    opacity: 0.6;
+
+    &::before {
+      border: 2px solid $color-secondary;
+    }
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 278px;
+    height: 512px;
+
+    &::before {
+      top: 236px;
+    }
+
+    &::after {
+      top: 247px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    left: 278px;
+    height: 512px;
+
+    &::before {
+      left: -16px;
+    }
+
+    &::after {
+      left: -7px;
+    }
+  }
+}

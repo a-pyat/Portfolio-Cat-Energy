@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  font-family: $text-font;
+  color: $text-color-secondary;
+
+  &:hover .copyright__academy-icon,
+  &:focus .copyright__academy-icon {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23%;
+    gap: 23px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 13.5%;
+  }
+}
+
+.copyright__academy-icon {
+  color: #666666;
+  width: 27px;
+  height: 34px;
+}
+

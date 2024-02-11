@@ -1,0 +1,239 @@
+.type-food {
+  display: grid;
+  row-gap: 20px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    padding-top: 81px;
+    padding-bottom: 35px;
+  }
+}
+
+.type-food__card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px;
+  background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 52px;
+    min-height: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 64px;
+    min-height: 263px;
+  }
+}
+
+.type-food__card-content {
+  position: relative;
+  margin-bottom: 19px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9d9d9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -11px;
+    width: 68px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+
+    &::before {
+      top: 30px;
+      left: auto;
+      right: 10px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      top: 18px;
+      left: auto;
+      right: -24px;
+      width: 268px;
+      height: 218px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 22px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: -5px;
+      left: -18px;
+      right: auto;
+      width: 134px;
+      height: 106px;
+    }
+  }
+}
+
+.type-food__card-content--slim {
+  &::after {
+    background-image: url("../../images/icons/stack.svg#icon-cat-slim");
+    background-size: 35px 49px;
+    background-position: center top;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-size: 140px 194px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-size: 70px 97px;
+    }
+  }
+}
+
+.type-food__card-content--pro {
+  &::after {
+    background-image: url("../../images/icons/stack.svg#icon-cat-pro");
+    background-size: 67px 28px;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-size: 268px 112px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-size: 134px 56px;
+    }
+  }
+}
+
+.type-food__card-title {
+  color: $text-color-primary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 28px;
+  margin-left: 70px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    margin-left: 162px;
+  }
+}
+
+.type-food__card-description {
+  font-family: $text-font;
+  color: $text-color-secondary;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 55%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: none;
+  }
+}
+
+.type-food__card-button {
+  position: relative;
+  color: $text-color-primary;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-top: auto;
+  max-width: 120px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    right: -9px;
+    width: 33px;
+    background-image: url("../../images/icons/stack.svg#icon_arrow-long");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    top: 55%;
+    right: -7px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 11px;
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
+    background-size: contain;
+    transition: all 0.1s linear;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 154px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

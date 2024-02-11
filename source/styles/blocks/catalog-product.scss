@@ -1,0 +1,26 @@
+.catalog-product {
+  margin-left: calc(var(--content-padding-mobile) *-1);
+  margin-right: calc(var(--content-padding-mobile) *-1);
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 68px;
+
+
+    margin-right: 0;
+    margin-left: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
+    padding-bottom: 77px;
+  }
+}

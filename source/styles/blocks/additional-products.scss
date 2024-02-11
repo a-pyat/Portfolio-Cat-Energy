@@ -1,0 +1,206 @@
+.additional-products {
+  padding-top: 25px;
+  padding-bottom: 34px;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+  }
+}
+
+.additional-products__section-title {
+  position: relative;
+  width: fit-content;
+  background: $background-color-primary;
+  box-shadow: -20px 0 0 0 $background-color-primary, 20px 0 0 0 $background-color-primary;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background: $color-secondary;
+    box-shadow: 100vw 0 0 0 $color-secondary;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+
+    box-shadow: 40px 0 0 0 $background-color-primary, 40px 0 0 0 $background-color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    padding-left: 0;
+    box-shadow: -40px 0 0 0 $background-color-primary, 40px 0 0 0 $background-color-primary;
+  }
+}
+
+.additional-products__content-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 245px;
+    column-gap: 80px;
+  }
+}
+
+.additional-products__list {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  list-style: none;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 70px;
+    max-width: 708px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
+    width: 895px;
+    max-width: none;
+  }
+}
+
+.additional-products__item {
+  display: grid;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 250px;
+    padding: 25px 38px 28px;
+
+    margin-left: -38px;
+    margin-right: -38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+
+    grid-template-columns: repeat(2, 285px) 245px;
+    column-gap: 40px;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.additional-products__link {
+  color: #222222;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.additional-products__card-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__feature {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: $text-font;
+  color: $text-color-secondary;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    justify-content: flex-end;
+    margin-top: 4px;
+    margin-bottom: 21px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__feature-property {
+  @media (min-width: $desktop-width) {
+    width: 175px;
+  }
+}
+
+.additional-products__feature-value {
+  @media (min-width: $tablet-width) {
+    width: 17%;
+    margin-top: -2px;
+    margin-left: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 42px;
+  }
+}
+
+.additional-products__button {
+  font-size: 16px;
+  line-height: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 3;
+  }
+}

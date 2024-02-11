@@ -1,0 +1,52 @@
+/* GLOBAL */
+@import "./global/mixins";
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+
+/* BLOCKS */
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page.scss";
+
+// Header
+@import "./blocks/main-header.scss";
+@import "./blocks/content-wrapper.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/hero.scss";
+
+// Главная страница
+// Main
+@import "./blocks/button.scss";
+@import "./blocks/type-food.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/slider.scss";
+
+// Страница формы
+// Main
+@import "./blocks/page-container.scss";
+@import "./blocks/form-input.scss";
+@import "./blocks/page-form.scss";
+@import "./blocks/form-label.scss";
+@import "./blocks/radio-toggle.scss";
+@import "./blocks/checkbox.scss";
+
+// Страница каталога
+// Main
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/product-card-feature.scss";
+@import "./blocks/product-show-more.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/gift.scss";
+
+// Footer
+@import "./blocks/main-footer.scss";
+@import "./blocks/location.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";

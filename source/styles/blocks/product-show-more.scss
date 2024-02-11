@@ -1,0 +1,131 @@
+.product-show-more {
+  padding-top: 25px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 86px;
+    padding-bottom: 0;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-top: 76px;
+  }
+}
+
+.product-show-more__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 36px 40px;
+    min-height: 340px;
+    border: 1px solid $background-color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 37px 40px;
+  }
+}
+
+.product-show-more__button {
+  border: none;
+  background-color: $background-color-primary;
+  padding: 0;
+  padding-bottom: 21px;
+  cursor: pointer;
+
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.product-show-more__button--more {
+  &::before {
+    content: "";
+    display: inline-block;
+    min-width: 30px;
+    min-height: 30px;
+    background-image: url("../../images/icons/stack.svg#icon-button-more");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      background-color: $background-color-primary;
+      min-width: 60px;
+      min-height: 60px;
+      background-size: 60px 60px;
+    }
+  }
+}
+
+.product-show-more__text {
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+
+    width: 135px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
+}
+
+.product-show-more__description {
+  font-family: $text-font;
+  color: $text-color-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
+}
+
+.product-show-more__all-products {
+  background-color: $background-color-secondary;
+  color: $text-color-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: $text-color-secondary;
+  }
+}
+

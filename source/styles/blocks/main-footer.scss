@@ -1,0 +1,38 @@
+.main-footer {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-secondary;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+}
+
+.main-footer__logo {
+  @media (min-width: $desktop-width) {
+    margin-right: 37px;
+  }
+}
+
